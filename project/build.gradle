@@ -30,6 +30,16 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    sourceSets {
+        main {
+            if (isDebug.toBoolean()){
+                manifest.srcFile 'src/main/debug/AndroidManifest.xml'
+            }else {
+                manifest.srcFile 'src/main/release/AndroidManifest.xml'
+            }
+        }
+    }
 }
 
 dependencies {
