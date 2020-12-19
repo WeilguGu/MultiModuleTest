@@ -1,0 +1,2 @@
+include ':user',':project',':home',':common',':app'
+rootProject.name = "ModuleTest"
