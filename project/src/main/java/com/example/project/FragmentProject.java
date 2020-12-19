@@ -36,15 +36,12 @@ public class FragmentProject extends BaseFragment {
             @Override
             public void onClick(View v) {
                 ARouter.getInstance().build(Constant.HOME_ACTIVITY).navigation(getActivity(),1021);
-//                new Intent(getActivity(),);
-//                startActivity();
             }
         });
     }
 
     @Override
-    public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        Log.d("FragmentProject","requestCode = " + requestCode + "   resultCode = " + resultCode);
+    public void onActivityResultCall(int requestCode, int resultCode, Intent data) {
+        Log.d("FragmentProject","requestCode = " + requestCode + "   resultCode = " + resultCode + "  data = " + data);
     }
 }

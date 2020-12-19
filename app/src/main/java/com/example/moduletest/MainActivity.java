@@ -11,8 +11,9 @@ import android.util.Log;
 import android.view.View;
 
 import com.alibaba.android.arouter.launcher.ARouter;
+import com.example.common.base.BaseActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
     private FragmentManager manager;
 
@@ -46,11 +47,5 @@ public class MainActivity extends AppCompatActivity {
     private void openFragment(String path){
         Fragment home = (Fragment) ARouter.getInstance().build(path).navigation();
         manager.beginTransaction().replace(R.id.fl_content,home).commit();
-    }
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        Log.d("MainActivity","MainActivity requestCode = " + requestCode + "   resultCode = " + resultCode);
     }
 }

@@ -37,4 +37,5 @@ dependencies {
     api 'androidx.constraintlayout:constraintlayout:2.0.4'
     api 'com.alibaba:arouter-api:1.5.0'
     annotationProcessor 'com.alibaba:arouter-compiler:1.2.2'
+    api 'org.greenrobot:eventbus:3.0.0'
 }
