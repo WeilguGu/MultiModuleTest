@@ -45,6 +45,6 @@ public class FragmentProject extends BaseFragment {
     @Override
     public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        Log.d("weilgu","requestCode = " + requestCode + "   resultCode = " + resultCode);
+        Log.d("FragmentProject","requestCode = " + requestCode + "   resultCode = " + resultCode);
     }
 }

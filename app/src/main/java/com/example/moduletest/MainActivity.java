@@ -51,6 +51,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        Log.d("weilgu","MainActivity requestCode = " + requestCode + "   resultCode = " + resultCode);
+        Log.d("MainActivity","MainActivity requestCode = " + requestCode + "   resultCode = " + resultCode);
     }
 }

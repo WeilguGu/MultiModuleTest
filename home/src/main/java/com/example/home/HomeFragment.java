@@ -22,7 +22,7 @@ public class HomeFragment extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Log.d("weilgu","HomeFragment = " + this);
+        Log.d("HomeFragment","HomeFragment = " + this);
     }
 
     @Nullable
